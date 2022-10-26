@@ -1,0 +1,245 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cta %}
+<div class="container hero">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+                <h1>Welcome to AAS Hospital</h1>
+                <p> AAS Hospital is a health care institution providing patient treatment with specialized medical and nursing staff and medical equipment.</p>
+                <p> We provides patients with compassionate care and provides varieties of facilities</p>
+                <p>AAS Hospital our future Hospital</p>
+
+                    <p>Famous doctors : Dr Shone Micheal MBBS , Dr Ajay Thomas MBBS, Dr Arunjith MBBS , Dr Jabir Ali MBBS</p>
+                    <a href="{% url 'appointment' %}" class="btn btn-light btn-lg action-button" type="button">Book an appointment</a>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock cta %}
+
+{% block content %}
+<section class="container py-5"  style="margin-block:200px;" id="team">
+    <div class="row text-center ">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="display-4">Our Team</h1>
+            <p class="lead">Passionate and hardworking doctors
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'img/shonnew.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Dr Shone Micheal</h5>
+                    <span class="small text-uppercase text-muted">Consultant anesthesiologist</span>
+                </div>
+            </div><!-- End -->
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'img/ajaymo.jpeg' %}" alt="" class=" mh-100 rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Dr Ajay Thomas</h5>
+                    <span class="small text-uppercase text-muted">Consultant cardiothoracic</span>
+                </div>
+            </div><!-- End -->
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'img/arunmoj.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Dr Arunjith</h5>
+                    <span class="small text-uppercase text-muted">Consultant dermatologist</span>
+                </div>
+            </div><!-- End -->
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'img/jabir.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Dr Jabir ali </h5>
+                    <span class="small text-uppercase text-muted">Consultant Obstetrician</span>
+                </div>
+            </div><!-- End -->
+        </div>
+    </div>
+</section><!-- End -->
+
+
+
+<section id="services">
+  <div class="bg-primary text-center py-5 mb-4">
+      <div class="container">
+        <h1 class="fw-light text-white">Services</h1>
+        <p class="overview">AAS HOSPITAL TRUST IN OUR DOCTORS.</p>
+      </div>
+    </div>
+  <div class="container">
+    <div class="row">
+      <!-- Team Member 1 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'img/think.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Primary Care</h5>
+            <div class="card-text text-black-50">care for mother and child which included family planning, immunization, prevention of locally endemic diseases, treatment of common diseases or injuries, provision of essential facilities, health education, provision of food and nutrition and adequate supply of safe drinking water.</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'img/derm.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Dermatology</h5>
+            <div class="card-text text-black-50">The skin is an incredible organ. It is your first line of defense against disease, protects your other organs, warms you up and cools you down, and sends messages about how healthy you are inside. Dermatologists are expert medical doctors and skin surgeons with the unique skills and experience to offer the best care for the organ that cares for you.</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 3 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'img/team.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Team Member</h5>
+            <div class="card-text text-black-50">Attending physician,Specialists,Registered nurses,Licensed practical nurses,Nurse practitioners and physician’s assistants,Patient advocate,Patient care technicians,Physical therapists,Occupational therapists,Hospital pharmacists,Social workers,Dietitians,Interpreters, Rapid response team,Other team members</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 4 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'img/prep.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">PrEP Therapy</h5>
+            <div class="card-text text-black-50">PrEP is not available everywhere in the world and even in countries where it has regulatory approval (meaning it’s approved as medication) it may not be easy to get hold of for a number of political or resourcing reasons.AAS Hospital provides facility to fight against HIV.The anti-HIV drugs in PrEP stop the virus replicating in your body. </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+  
+  </div>
+</section>
+
+<section class="text-center conatiner" style="margin-block:200px;" id="reviews">
+    <h2>Satisfied Patients</h2>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="img-box"><img src="{% static 'img/thorappan.jpg' %}" alt=""></div>
+
+                <p class="testimonial"> Recently visited health check up department of AAS Hospital for a whole body check up. The entire process from check in to the end was seamless. The staff at the health check department was courteous, helpful and very attentive. I would highly recommend this hospital to anyone looking for something similar services. </p>
+                <h6 class="overview">~Thorappan kochunni</h6>
+
+            </div>
+            <section class="text-center conatiner" style="margin-block:300px;" id="reviews">
+            <div class="carousel-item active">
+
+                <div class="img-box"><img src="{% static 'img/hq.jpg' %}" alt=""></div>
+
+                <p class="testimonial"> We met Dr Shone Micheal last month with severe cough and sputum for my father.His way of handling patients is excellent and so soothing that the patient feels immensely confident about recovery. Thanks to Dr. Shone, within 2 weeks, he is completely normal.</p>
+                <h6 class="overview">~pillechan</h6>
+            </div>
+                </section>
+
+            <section class="text-center conatiner" style="margin-block:600px;" id="reviews">
+
+            <div class="carousel-item active">
+
+                <div class="img-box"><img src="{% static 'img/download.jpg' %}" alt=""></div>
+
+                <p class="testimonial">AAS HOSPITAL Beautiful ,Fantastic , Amazing. Doctors of AAS HOSPITAL Triple Strong</p>
+                <h6 class="overview">~Raja</h6>
+            </div>
+            </section>
+        </div>
+    </div>
+
+</section>
+
+
+<section id="contact" class="card m-4 p-4">
+    <div class="container">
+        <div class="row text-center">
+          
+            <div class="col-sm-6">
+            <div class="contact-detail-box">
+              <i class="far fa-envelope text-colored fa-3x"></i>
+              <h4>Get In Touch</h4>
+              <abbr title="Phone">Phone:</abbr> (+91) 8234956795<br>
+              Email: <a href="mailto:aashospitalcustomer@gmail.com" class="text-muted">aashospitalcustomer@gmail.com</a>
+            </div>
+          </div><!-- end col -->
+  
+          <div class="col-sm-6">
+            <div class="contact-detail-box">
+              <i class="fa fa-map-marker fa-3x text-colored"></i>
+              <h4>Our Location</h4>
+  
+              <address>
+              AAS Hospital , North Kaloor,<br>
+                  Ernakulam,Kerala 682018<br>
+            </address>
+            </div>
+          </div><!-- end col -->
+  
+  
+  
+        </div>
+        <!-- end row -->
+  
+  
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="contact-map">
+              <iframe src="https://www.google.com/maps/embed/v1/place?q=North+Kaloor,+Kacheripady,+Ernakulam,+Kerala&amp;key=AIzaSyBSFRN6WWGYwmFi498qXXsD2UwkbmD74v4" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%; height: 360px;"></iframe>
+            </div>
+          </div><!-- end col -->
+  
+          <!-- Contact form -->
+          <div class="col-sm-6">
+            <form role="form" name="ajax-form" id="ajax-form" method="post" class="form-main" action="{% url 'home' %}">
+            {% csrf_token %}
+              <div class="form-group">
+                <label for="name2">Name</label>
+                <input class="form-control" id="name2" name="name" type="text" placeholder="name">
+                <div class="error" id="err-name" style="display: none;">Please enter name</div>
+              </div> <!-- /Form-name -->
+  
+              <div class="form-group">
+                <label for="email2">Email</label>
+                <input class="form-control" id="email2" name="email" type="text" placeholder="email">
+                <div class="error" id="err-emailvld" style="display: none;">E-mail is not a valid format</div> 
+              </div> <!-- /Form-email -->
+  
+              <div class="form-group">
+                <label for="message2">Message</label>
+                <textarea class="form-control" id="message2" name="message" rows="5" placeholder="message">Message</textarea>
+  
+                <div class="error" id="err-message" style="display: none;">Please enter message</div>
+              </div> <!-- /col -->
+  
+              <div class="row">            
+                  <button type="submit" class="btn btn-primary btn-shadow btn-rounded w-md" id="send">Send</button>
+                </div> <!-- /col -->
+              </div> <!-- /row -->
+  
+            </form> <!-- /form -->
+          </div> <!-- end col -->
+  
+        </div> <!-- end row -->
+            
+      </div>
+</section>
+
+
+{% endblock content %}
